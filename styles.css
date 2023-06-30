@@ -1,0 +1,140 @@
+:root {
+  --color-1: #e0fbfc;
+  --color-2: #c2dfe3;
+  --color-3: #9db4c0;
+  --color-4: #5c6b73;
+  --color-5: #253237;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cronos-pro-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-1);
+}
+
+body {
+  background-color: var(--color-5);
+}
+
+.main-nav-container {
+  width: 100%;
+  background-color: #1a1a1a00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  margin: 20px 0px 0px 20px;
+}
+.logo h2 {
+  font-size: 30px;
+  display: flex;
+  letter-spacing: 2px;
+}
+
+.main-nav {
+  margin: 20px 20px 0px 0px;
+}
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav li {
+  list-style: none;
+  margin: 0px 20px 0px 0px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-btn {
+  border-width: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: solid;
+  background-color: rgba(255, 255, 255, 0);
+  transition: ease 0.2s;
+}
+
+.contact-btn:hover {
+  color: #253237;
+  background-color: #e0fbfc;
+}
+
+.mobile-menu-list li a {
+  text-decoration: none;
+}
+.mobile-menu-list li {
+  padding: 5px 0px;
+}
+.mobile-menu-list {
+  margin-left: 20px;
+}
+.mobile-menu-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.mobile-menu-list {
+  display: none;
+  /* visibility: hidden; */
+  /* position: absolute; */
+}
+
+.mobile-menu-list .separator-3 {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+.nav-mobile-menu {
+  display: none;
+}
+.nav-center-mobile {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 746px) {
+  .main-nav-container {
+    display: none;
+  }
+  .nav-mobile-menu {
+    display: block;
+    padding-top: 20px;
+  }
+  .about-me p {
+    padding: 20px;
+  }
+  .mobile-menu-list-active {
+    /* visibility: visible; */
+    display: block;
+    animation: easingIn 0.75s;
+  }
+  .site-content-active {
+    animation: easingIn2 0.75s;
+  }
+}
